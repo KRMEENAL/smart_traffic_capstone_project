@@ -54,11 +54,11 @@ def cmd_query_traffic(args):
 
     result = df.loc[mask]
     if result.empty:
-        print(f"No records found for {args.date}" + (f" hour {args.hour}" if args.hour is not None else ""))
+        logger.info(f"No records found for {args.date}" + (f" hour {args.hour}" if args.hour is not None else ""))
         return
 
     cols = ["date_time", "traffic_volume", "temp_c", "weather_main", "congestion_category"]
-    print(result[cols].to_string(index=False))        
+    logger.info(result[cols].to_string(index=False))        
 
 #--Command 2 : identify high traffic periods    
 def cmd_high_traffic(args):

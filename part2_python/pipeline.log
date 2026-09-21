@@ -2020,3 +2020,25 @@ Name: count, dtype: int64
 2026-09-21 21:55:42 | INFO | __main__ |   Records: 13,384
 2026-09-21 21:55:42 | INFO | __main__ |   Avg traffic volume: 3,056
 2026-09-21 21:55:42 | INFO | __main__ |   Avg temperature: 8.3°C
+2026-09-21 22:11:05 | DEBUG | __main__ | No records found for 2026-01-01
+2026-09-21 22:11:26 | INFO | __main__ | No records found for 2026-01-01
+2026-09-21 22:11:42 | INFO | __main__ |           date_time  traffic_volume  temp_c weather_main congestion_category
+2016-01-01 00:00:00            1513   -7.21         Haze                 Low
+2016-01-01 00:00:00            1513   -7.21         Snow                 Low
+2016-01-01 01:00:00            1550   -7.15         Snow                 Low
+2016-01-01 03:00:00             719   -7.14         Snow                 Low
+2016-01-01 04:00:00             533   -8.35       Clouds                 Low
+2016-01-01 05:00:00             586   -8.77       Clouds                 Low
+2016-01-01 06:00:00             809   -9.16        Clear                 Low
+2016-01-01 07:00:00             882   -8.99        Clear                 Low
+2016-01-01 08:00:00            1077   -8.35       Clouds                 Low
+2016-01-01 09:00:00            1574   -7.39       Clouds                 Low
+2016-01-01 10:00:00            2059   -5.54       Clouds                 Low
+2016-01-01 12:00:00            3206   -3.72        Clear              Medium
+2016-01-01 13:00:00            3498   -1.38        Clear              Medium
+2016-01-01 14:00:00            3453   -1.17        Clear              Medium
+2016-01-01 16:00:00            3359   -1.22        Clear              Medium
+2016-01-01 18:00:00            2899   -3.75        Clear              Medium
+2016-01-01 20:00:00            2134   -5.50        Clear                 Low
+2016-01-01 21:00:00            1845   -6.63        Clear                 Low
+2016-01-01 23:00:00            1280   -7.64        Clear                 Low
