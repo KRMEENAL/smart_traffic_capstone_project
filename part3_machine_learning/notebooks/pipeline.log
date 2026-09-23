@@ -1,0 +1,318 @@
+2026-09-22 21:46:57 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 21:47:04 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 21:47:04 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-22 21:47:04 | INFO | task1_models | is_holiday flag built: 48187 holiday hours out of 48187
+2026-09-22 21:47:04 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-22 21:47:04 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-22 21:47:04 | ERROR | task1_models | Missing expected feature columns: ['day_of_week_sin', 'day_of_week_cos']
+2026-09-22 21:47:15 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 21:47:30 | INFO | task1_models | is_holiday flag built: 48187 holiday hours out of 48187
+2026-09-22 21:47:58 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-22 21:47:58 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-22 21:50:54 | ERROR | task1_models | Missing expected feature columns: ['day_of_week_sin', 'day_of_week_cos']
+2026-09-22 21:51:29 | ERROR | task1_models | Missing expected feature columns: ['day_of_week_sin', 'day_of_week_cos']
+2026-09-22 21:54:35 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-22 21:55:17 | INFO | task1_models | No missing values in modelling columns
+2026-09-22 21:55:17 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-22 21:55:39 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.47, R2: 0.7219
+2026-09-22 21:55:44 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.67, R2: 0.9480
+2026-09-22 21:56:59 | INFO | task1_models | [] Linear Regression — MAE: 820.47, R2: 0.7219
+2026-09-22 21:57:04 | INFO | task1_models | [] Random Forest Regressor — MAE: 263.67, R2: 0.9480
+2026-09-22 21:57:08 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.47, R2: 0.7219
+2026-09-22 21:57:13 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.67, R2: 0.9480
+2026-09-22 21:59:36 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-22 21:59:38 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9508, Prec: 0.7407, Rec: 0.9840, F1: 0.8452, AUC: 0.9923
+2026-09-22 21:59:41 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-22 21:59:43 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9508, Prec: 0.7407, Rec: 0.9840, F1: 0.8452, AUC: 0.9923
+2026-09-22 22:13:46 | INFO | task1_models | Notebook run complete
+2026-09-22 22:14:20 | INFO | task1_models | Notebook execution complete
+2026-09-22 22:15:07 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 22:15:08 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-22 22:15:08 | INFO | task1_models | is_holiday flag built: 48187 holiday hours out of 48187
+2026-09-22 22:15:08 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-22 22:15:08 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-22 22:15:08 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-22 22:15:08 | INFO | task1_models | No missing values in modelling columns
+2026-09-22 22:15:08 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-22 22:15:08 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.47, R2: 0.7219
+2026-09-22 22:15:12 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.67, R2: 0.9480
+2026-09-22 22:15:15 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-22 22:15:16 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9508, Prec: 0.7407, Rec: 0.9840, F1: 0.8452, AUC: 0.9923
+2026-09-22 22:15:16 | INFO | task1_models | Notebook execution complete
+2026-09-22 22:15:22 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 22:30:44 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-22 22:30:49 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-22 22:34:19 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-22 22:34:19 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-22 22:34:21 | INFO | task1_models | K-Means fit: 4 clusters, inertia=43785.5
+2026-09-22 22:34:21 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.0               0.4           886.9  13738
+1        20.9               0.4          2499.8   9642
+2        12.5               1.3          4651.3  11312
+3        12.2               0.0          5051.5  13495
+2026-09-22 22:34:21 | INFO | task1_models |          hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.0               0.4           886.9  13738
+1        20.9               0.4          2499.8   9642
+2        12.5               1.3          4651.3  11312
+3        12.2               0.0          5051.5  13495
+2026-09-22 22:50:09 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-22 22:50:09 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-22 22:50:09 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-22 22:50:09 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-22 22:50:09 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-22 22:55:57 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-22 22:55:57 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-22 22:55:57 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-22 22:55:57 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-22 22:55:57 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-22 22:56:21 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-22 22:56:21 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-22 22:56:21 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-22 22:56:21 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-22 22:56:21 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 20:58:36 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 20:58:37 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 20:58:37 | INFO | task1_models | is_holiday flag built: 61 holiday hours out of 48187
+2026-09-23 20:58:37 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-23 20:58:37 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-23 20:58:37 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-23 20:58:37 | INFO | task1_models | No missing values in modelling columns
+2026-09-23 20:58:37 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-23 20:58:37 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.40, R2: 0.7219
+2026-09-23 20:58:41 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.71, R2: 0.9480
+2026-09-23 20:58:45 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-23 20:58:47 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9511, Prec: 0.7414, Rec: 0.9856, F1: 0.8462, AUC: 0.9924
+2026-09-23 20:58:47 | INFO | task1_models | Notebook execution complete
+2026-09-23 20:59:30 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 20:59:31 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 20:59:31 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 20:59:31 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 20:59:35 | INFO | task1_models | K-Means fit: 4 clusters, inertia=43785.5
+2026-09-23 20:59:35 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.0               0.4           886.9  13738
+1        20.9               0.4          2499.8   9642
+2        12.5               1.3          4651.3  11312
+3        12.2               0.0          5051.5  13495
+2026-09-23 20:59:35 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 20:59:35 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 20:59:35 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 20:59:35 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 20:59:35 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:12:36 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 21:12:36 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 21:12:36 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:12:36 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:12:38 | INFO | task1_models | K-Means fit: 4 clusters, inertia=43785.5
+2026-09-23 21:12:38 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.0               0.4           886.9  13738
+1        20.9               0.4          2499.8   9642
+2        12.5               1.3          4651.3  11312
+3        12.2               0.0          5051.5  13495
+2026-09-23 21:12:38 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 21:12:38 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 21:12:38 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 21:12:38 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 21:12:38 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:14:13 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 21:14:14 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 21:14:14 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:14:14 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:14:15 | INFO | task1_models | K-Means fit: 4 clusters, inertia=43785.5
+2026-09-23 21:14:15 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.0               0.4           886.9  13738
+1        20.9               0.4          2499.8   9642
+2        12.5               1.3          4651.3  11312
+3        12.2               0.0          5051.5  13495
+2026-09-23 21:14:15 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 21:14:15 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 21:14:16 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 21:14:16 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 21:14:16 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:15:10 | INFO | task1_models | k=2: inertia=87980.3, silhouette=0.424
+2026-09-23 21:15:11 | INFO | task1_models | k=3: inertia=59604.8, silhouette=0.437
+2026-09-23 21:15:12 | INFO | task1_models | k=4: inertia=43785.5, silhouette=0.460
+2026-09-23 21:15:13 | INFO | task1_models | k=5: inertia=33081.9, silhouette=0.491
+2026-09-23 21:15:15 | INFO | task1_models | k=6: inertia=25903.1, silhouette=0.517
+2026-09-23 21:15:16 | INFO | task1_models | k=7: inertia=21213.4, silhouette=0.533
+2026-09-23 21:15:17 | INFO | task1_models | k=8: inertia=18620.4, silhouette=0.497
+2026-09-23 21:15:19 | INFO | task1_models | k=9: inertia=16394.1, silhouette=0.506
+2026-09-23 21:15:20 | INFO | task1_models | k=10: inertia=14597.6, silhouette=0.515
+2026-09-23 21:20:56 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 21:20:56 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 21:20:56 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:20:56 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:20:58 | INFO | task1_models | K-Means fit: 7 clusters, inertia=21213.4
+2026-09-23 21:20:58 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.2               0.0           952.0   8625
+1        11.9               2.2          4350.4   2273
+2        20.7               0.0          2658.6   6619
+3        12.1               0.0          5105.2  12980
+4        12.1               1.0          5016.4   7931
+5         3.2               1.1           870.4   5470
+6        20.6               1.1          2462.7   4289
+2026-09-23 21:20:58 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 21:20:58 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 21:20:58 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 21:20:58 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 21:20:58 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:20:59 | INFO | task1_models | k=2: inertia=87980.3, silhouette=0.424
+2026-09-23 21:21:01 | INFO | task1_models | k=3: inertia=59604.8, silhouette=0.437
+2026-09-23 21:21:02 | INFO | task1_models | k=4: inertia=43785.5, silhouette=0.460
+2026-09-23 21:21:03 | INFO | task1_models | k=5: inertia=33081.9, silhouette=0.491
+2026-09-23 21:21:04 | INFO | task1_models | k=6: inertia=25903.1, silhouette=0.517
+2026-09-23 21:21:05 | INFO | task1_models | k=7: inertia=21213.4, silhouette=0.533
+2026-09-23 21:21:06 | INFO | task1_models | k=8: inertia=18620.4, silhouette=0.497
+2026-09-23 21:21:08 | INFO | task1_models | k=9: inertia=16394.1, silhouette=0.506
+2026-09-23 21:21:09 | INFO | task1_models | k=10: inertia=14597.6, silhouette=0.515
+2026-09-23 21:21:44 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 21:21:44 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 21:21:44 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:21:44 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:21:46 | INFO | task1_models | K-Means fit: 7 clusters, inertia=21213.4
+2026-09-23 21:21:46 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.2               0.0           952.0   8625
+1        11.9               2.2          4350.4   2273
+2        20.7               0.0          2658.6   6619
+3        12.1               0.0          5105.2  12980
+4        12.1               1.0          5016.4   7931
+5         3.2               1.1           870.4   5470
+6        20.6               1.1          2462.7   4289
+2026-09-23 21:21:46 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 21:21:46 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 21:21:46 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 21:21:46 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 21:21:46 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:21:47 | INFO | task1_models | k=2: inertia=87980.3, silhouette=0.424
+2026-09-23 21:21:49 | INFO | task1_models | k=3: inertia=59604.8, silhouette=0.437
+2026-09-23 21:21:50 | INFO | task1_models | k=4: inertia=43785.5, silhouette=0.460
+2026-09-23 21:21:51 | INFO | task1_models | k=5: inertia=33081.9, silhouette=0.491
+2026-09-23 21:21:52 | INFO | task1_models | k=6: inertia=25903.1, silhouette=0.517
+2026-09-23 21:21:53 | INFO | task1_models | k=7: inertia=21213.4, silhouette=0.533
+2026-09-23 21:21:54 | INFO | task1_models | k=8: inertia=18620.4, silhouette=0.497
+2026-09-23 21:21:56 | INFO | task1_models | k=9: inertia=16394.1, silhouette=0.506
+2026-09-23 21:21:57 | INFO | task1_models | k=10: inertia=14597.6, silhouette=0.515
+2026-09-23 21:24:21 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:24:21 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:24:21 | INFO | task1_models | K-Means fit: 7 clusters, inertia=21213.4
+2026-09-23 21:24:32 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:24:32 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:24:32 | INFO | task1_models | K-Means fit: 7 clusters, inertia=21213.4
+2026-09-23 21:24:32 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.2               0.0           952.0   8625
+1        11.9               2.2          4350.4   2273
+2        20.7               0.0          2658.6   6619
+3        12.1               0.0          5105.2  12980
+4        12.1               1.0          5016.4   7931
+5         3.2               1.1           870.4   5470
+6        20.6               1.1          2462.7   4289
+2026-09-23 21:25:00 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 21:25:00 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 21:25:00 | INFO | task1_models | weather_severity built (range 0-3)
+2026-09-23 21:25:00 | INFO | task1_models | Clustering on 48187 rows using features: ['hour', 'weather_severity', 'traffic_volume']
+2026-09-23 21:25:02 | INFO | task1_models | K-Means fit: 7 clusters, inertia=21213.4
+2026-09-23 21:25:02 | INFO | task1_models | Cluster profiles:
+         hour  weather_severity  traffic_volume  count
+cluster                                               
+0         3.2               0.0           952.0   8625
+1        11.9               2.2          4350.4   2273
+2        20.7               0.0          2658.6   6619
+3        12.1               0.0          5105.2  12980
+4        12.1               1.0          5016.4   7931
+5         3.2               1.1           870.4   5470
+6        20.6               1.1          2462.7   4289
+2026-09-23 21:25:02 | INFO | task1_models | Discretised features: time_of_day, weekday_type, weather_bucket, congestion_category
+2026-09-23 21:25:02 | INFO | task1_models | Built transaction-encoded basket: 48187 rows, 11 items
+2026-09-23 21:25:02 | INFO | task1_models | Found 121 frequent itemsets (min_support=0.02)
+2026-09-23 21:25:02 | INFO | task1_models | Generated 392 candidate rules (lift >= 1.0)
+2026-09-23 21:25:02 | INFO | task1_models | Top 10 congestion-predicting rules by lift
+2026-09-23 21:25:04 | INFO | task1_models | k=2: inertia=87980.3, silhouette=0.424
+2026-09-23 21:25:05 | INFO | task1_models | k=3: inertia=59604.8, silhouette=0.437
+2026-09-23 21:25:06 | INFO | task1_models | k=4: inertia=43785.5, silhouette=0.460
+2026-09-23 21:25:07 | INFO | task1_models | k=5: inertia=33081.9, silhouette=0.491
+2026-09-23 21:25:08 | INFO | task1_models | k=6: inertia=25903.1, silhouette=0.517
+2026-09-23 21:25:10 | INFO | task1_models | k=7: inertia=21213.4, silhouette=0.533
+2026-09-23 21:25:11 | INFO | task1_models | k=8: inertia=18620.4, silhouette=0.497
+2026-09-23 21:25:13 | INFO | task1_models | k=9: inertia=16394.1, silhouette=0.506
+2026-09-23 21:25:14 | INFO | task1_models | k=10: inertia=14597.6, silhouette=0.515
+2026-09-23 22:07:21 | INFO | task3_models | Logging initialised
+2026-09-23 22:07:53 | INFO | task3_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 22:07:59 | INFO | task3_models | Sequence data prepared: 48187 rows, 6 features
+2026-09-23 22:07:59 | INFO | task3_models | Chronological split: 38549 train rows, 9638 test rows
+2026-09-23 22:07:59 | INFO | task3_models | Sequences built: X_train (38525, 24, 6), X_test (9638, 24, 6)
+2026-09-23 22:10:59 | INFO | task3_models | LSTM training complete: 18 epochs run
+2026-09-23 22:11:02 | INFO | task3_models | LSTM test MAE: 247.22, R2: 0.9659
+2026-09-23 22:11:02 | INFO | task3_models | LSTM — MAE: 247.22, R2: 0.9659
+2026-09-23 22:15:07 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 22:17:53 | INFO | task3_models | Random Forest (explainability proxy) — MAE: 263.71, R2: 0.9480
+2026-09-23 22:17:53 | INFO | task3_models | Random Forest (proxy for explainability) — MAE: 263.71, R2: 0.9480
+2026-09-23 22:20:18 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 22:20:18 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 22:20:18 | INFO | task1_models | is_holiday flag built: 61 holiday hours out of 48187
+2026-09-23 22:20:18 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-23 22:20:18 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-23 22:20:18 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-23 22:20:18 | INFO | task1_models | No missing values in modelling columns
+2026-09-23 22:20:18 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-23 22:20:19 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.40, R2: 0.7219
+2026-09-23 22:20:24 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.71, R2: 0.9480
+2026-09-23 22:20:27 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-23 22:20:29 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9511, Prec: 0.7414, Rec: 0.9856, F1: 0.8462, AUC: 0.9924
+2026-09-23 22:20:29 | INFO | task1_models | Notebook execution complete
+2026-09-23 22:20:45 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 22:21:24 | INFO | task1_models | is_holiday flag built: 61 holiday hours out of 48187
+2026-09-23 22:21:49 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-23 22:21:49 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-23 22:22:41 | INFO | task1_models | Logging initialised — DEBUG+ to pipeline.log, INFO+ to this notebook
+2026-09-23 22:22:41 | INFO | task1_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 22:22:41 | INFO | task1_models | is_holiday flag built: 61 holiday hours out of 48187
+2026-09-23 22:22:41 | INFO | task1_models | Congestion cutoff (traffic_volume): 4571
+2026-09-23 22:22:41 | INFO | task1_models | accident_risk positive rate: 13.6%
+2026-09-23 22:22:41 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-23 22:22:41 | INFO | task1_models | No missing values in modelling columns
+2026-09-23 22:22:41 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-23 22:22:41 | INFO | task1_models | [Regression] Linear Regression — MAE: 820.40, R2: 0.7219
+2026-09-23 22:22:47 | INFO | task1_models | [Regression] Random Forest Regressor — MAE: 263.71, R2: 0.9480
+2026-09-23 22:22:50 | INFO | task1_models | [Classification] Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-23 22:22:52 | INFO | task1_models | [Classification] Random Forest Classifier — Acc: 0.9511, Prec: 0.7414, Rec: 0.9856, F1: 0.8462, AUC: 0.9924
+2026-09-23 22:22:52 | INFO | task1_models | Notebook execution complete
+2026-09-23 22:23:00 | INFO | task3_models | Logging initialised
+2026-09-23 22:23:01 | INFO | task3_models | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 22:23:01 | INFO | task3_models | Sequence data prepared: 48187 rows, 6 features
+2026-09-23 22:23:01 | INFO | task3_models | Chronological split: 38549 train rows, 9638 test rows
+2026-09-23 22:23:01 | INFO | task3_models | Sequences built: X_train (38525, 24, 6), X_test (9638, 24, 6)
+2026-09-23 22:24:48 | INFO | task1_models | Using 24 features: ['hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'is_precipitation', 'total_precipitation', 'is_overcast', 'is_clear', 'is_severe_weather', 'clouds_all', 'temp_c', 'is_holiday']
+2026-09-23 22:25:04 | INFO | task1_models | No missing values in modelling columns
+2026-09-23 22:25:04 | INFO | task1_models | Modelling on 48187 rows, 24 features
+2026-09-23 22:26:49 | INFO | task3_models | LSTM training complete: 24 epochs run
+2026-09-23 22:26:52 | INFO | task3_models | LSTM test MAE: 237.23, R2: 0.9665
+2026-09-23 22:26:52 | INFO | task3_models | LSTM — MAE: 237.23, R2: 0.9665
+2026-09-23 22:26:57 | INFO | task3_models | Random Forest (explainability proxy) — MAE: 263.71, R2: 0.9480
+2026-09-23 22:33:46 | INFO | task3_models | SHAP values computed on 2000 sampled test rows
+2026-09-23 22:33:49 | INFO | task3_models | SHAP local force-plot generated for one example row
+2026-09-23 23:03:19 | INFO | task4_mlflow | Logging initialised
+2026-09-23 23:03:19 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 23:03:52 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 23:03:52 | INFO | task4_mlflow | Modelling on 48187 rows, 24 features
+2026-09-23 23:15:10 | INFO | task4_mlflow | MLflow experiment set: metro_traffic_models (tracking URI: ./mlruns)
+2026-09-23 23:21:28 | INFO | task4_mlflow | Logging initialised
+2026-09-23 23:21:28 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 23:21:29 | INFO | task4_mlflow | Modelling on 48187 rows, 24 features
+2026-09-23 23:22:57 | INFO | task4_mlflow | Logging initialised
+2026-09-23 23:23:13 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 23:23:34 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-23 23:23:34 | INFO | task4_mlflow | Modelling on 48187 rows, 24 features
