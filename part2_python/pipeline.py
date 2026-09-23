@@ -43,7 +43,7 @@ def setup_logging():
 
 def load_raw(path: Path) -> pd.DataFrame:
     try:
-        df = pd.read_csv(path)
+        df = pd.read_csv(path,na_values=["Nan", "NAN", "nan", "NaN", "None", "none"])
     except FileNotFoundError:
         logger.error("CSV not found: %s", path, exc_info=True)
         sys.exit(1)
@@ -62,14 +62,14 @@ def validate_schema(df: pd.DataFrame) -> None:
     logger.info("Schema validation passed")
 
 
-def clean_data(df: pd.DataFrame) -> pd.DataFrame:
-    before = df["holiday"].astype(str)
+def clean_data(df: pd.DataFrame) -> pd.DataFrame:    
+    before = df["holiday"]
     df["holiday"] = before.str.strip().str.title()
-    n_case = int((df["holiday"] != before).sum())
+    n_case = int(((df["holiday"] != before) & before.notna()).sum())
     if n_case:
         logger.warning("Standardised holiday casing for %s rows", n_case)
     else:
-        logger.info("department already consistent")
+        logger.info("holiday column already consistent")    
 
     df["date_time"] = pd.to_datetime(df["date_time"], errors="coerce")
     bad = int(df["date_time"].isna().sum())
