@@ -316,3 +316,29 @@ cluster
 2026-09-23 23:23:13 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
 2026-09-23 23:23:34 | INFO | task4_mlflow | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
 2026-09-23 23:23:34 | INFO | task4_mlflow | Modelling on 48187 rows, 24 features
+2026-09-23 23:31:24 | INFO | task4_mlflow | MLflow experiment set: metro_traffic_models (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-23 23:32:11 | INFO | task4_mlflow | [MLflow] regression/Linear Regression — MAE: 820.40, R2: 0.7219
+2026-09-23 23:32:32 | INFO | task4_mlflow | [MLflow] regression/Random Forest Regressor — MAE: 263.71, R2: 0.9480
+2026-09-23 23:32:51 | INFO | task4_mlflow | [MLflow] classification/Logistic Regression — Acc: 0.9104, Prec: 0.6095, Rec: 0.9544, F1: 0.7439, AUC: 0.9597
+2026-09-23 23:33:16 | INFO | task4_mlflow | [MLflow] classification/Random Forest Classifier — Acc: 0.9511, Prec: 0.7414, Rec: 0.9856, F1: 0.8462, AUC: 0.9924
+2026-09-24 21:39:45 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:42:07 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:42:43 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:42:43 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:42:53 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:43:43 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:43:43 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:43:43 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:43:50 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:44:40 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:44:41 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:44:41 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:44:48 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:45:00 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:45:00 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:45:00 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:45:07 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:45:17 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:45:17 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:45:17 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:45:24 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
