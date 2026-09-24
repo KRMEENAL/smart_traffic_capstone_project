@@ -342,3 +342,117 @@ cluster
 2026-09-24 21:45:17 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
 2026-09-24 21:45:17 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
 2026-09-24 21:45:24 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:53:23 | INFO | task5_recommender | Logging initialised
+2026-09-24 21:53:34 | INFO | task5_recommender | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 21:53:34 | INFO | task5_recommender | Modelling on 48187 rows, 24 features
+2026-09-24 21:53:50 | INFO | task5_recommender | Recommender models fitted on the full dataset (48187 rows). Base accident_risk rate: 0.136
+2026-09-24 21:53:50 | INFO | task5_recommender | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-24 21:54:16 | DEBUG | task5_recommender | [Recommend] weekday/None -> hour 20 (vol 2830, risk 0.013, elevated=False)
+2026-09-24 21:54:16 | INFO | task5_recommender | [Recommender] weekday / None -> For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:54:16 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:54:16 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:54:16 | DEBUG | task5_recommender | [Recommend] weekday/Rain -> hour 20 (vol 2862, risk 0.033, elevated=False)
+2026-09-24 21:54:16 | INFO | task5_recommender | [Recommender] weekday / Rain -> For a weekday journey in rain conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2862 vehicles/hour).
+2026-09-24 21:54:16 | DEBUG | task5_recommender | [Recommend] weekend/Clear -> hour 6 (vol 1179, risk 0.000, elevated=False)
+2026-09-24 21:54:16 | INFO | task5_recommender | [Recommender] weekend / Clear -> For a weekend journey in clear conditions, consider travelling between 6:00 AM and 7:00 AM, when traffic volumes are typically lower (model estimate: ~1179 vehicles/hour).
+2026-09-24 21:54:16 | DEBUG | task5_recommender | [Recommend] weekday/Snow -> hour 20 (vol 2614, risk 0.056, elevated=False)
+2026-09-24 21:54:16 | INFO | task5_recommender | [Recommender] weekday / Snow -> For a weekday journey in snow conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2614 vehicles/hour).
+2026-09-24 21:54:18 | DEBUG | task5_recommender | [Recommend] holiday/None -> hour 20 (vol 2841, risk 0.010, elevated=False)
+2026-09-24 21:54:18 | INFO | task5_recommender | [Recommender] holiday / None -> For a holiday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2841 vehicles/hour).
+2026-09-24 21:54:18 | DEBUG | task5_recommender | [Recommend] weekday/Thunderstorm -> hour 20 (vol 2822, risk 0.029, elevated=True)
+2026-09-24 21:54:18 | INFO | task5_recommender | [Recommender] weekday / Thunderstorm -> For a weekday journey in thunderstorm conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2822 vehicles/hour). Note: every hour in thunderstorm conditions shows an elevated modelled accident-risk signal relative to the dataset average — this reflects the conditions themselves, and no timing choice fully avoids it.
+2026-09-24 21:54:39 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:54:39 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:57:12 | INFO | task5_recommender | Available weather conditions: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-24 21:57:18 | DEBUG | task5_recommender | [Recommend] weekday/None -> hour 20 (vol 2830, risk 0.013, elevated=False)
+2026-09-24 21:57:18 | INFO | task5_recommender | [Recommender] weekday / None -> For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:57:18 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:57:18 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:57:18 | DEBUG | task5_recommender | [Recommend] weekday/Rain -> hour 20 (vol 2862, risk 0.033, elevated=False)
+2026-09-24 21:57:18 | INFO | task5_recommender | [Recommender] weekday / Rain -> For a weekday journey in rain conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2862 vehicles/hour).
+2026-09-24 21:57:18 | DEBUG | task5_recommender | [Recommend] weekend/Clear -> hour 6 (vol 1179, risk 0.000, elevated=False)
+2026-09-24 21:57:18 | INFO | task5_recommender | [Recommender] weekend / Clear -> For a weekend journey in clear conditions, consider travelling between 6:00 AM and 7:00 AM, when traffic volumes are typically lower (model estimate: ~1179 vehicles/hour).
+2026-09-24 21:57:18 | DEBUG | task5_recommender | [Recommend] weekday/Snow -> hour 20 (vol 2614, risk 0.056, elevated=False)
+2026-09-24 21:57:18 | INFO | task5_recommender | [Recommender] weekday / Snow -> For a weekday journey in snow conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2614 vehicles/hour).
+2026-09-24 21:57:20 | DEBUG | task5_recommender | [Recommend] holiday/None -> hour 20 (vol 2841, risk 0.010, elevated=False)
+2026-09-24 21:57:20 | INFO | task5_recommender | [Recommender] holiday / None -> For a holiday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2841 vehicles/hour).
+2026-09-24 21:57:20 | DEBUG | task5_recommender | [Recommend] weekday/Thunderstorm -> hour 20 (vol 2822, risk 0.029, elevated=True)
+2026-09-24 21:57:20 | INFO | task5_recommender | [Recommender] weekday / Thunderstorm -> For a weekday journey in thunderstorm conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2822 vehicles/hour). Note: every hour in thunderstorm conditions shows an elevated modelled accident-risk signal relative to the dataset average — this reflects the conditions themselves, and no timing choice fully avoids it.
+2026-09-24 21:57:20 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:57:20 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:58:00 | DEBUG | task5_recommender | [Recommend] weekday/None -> hour 20 (vol 2830, risk 0.013, elevated=False)
+2026-09-24 21:58:00 | INFO | task5_recommender | [Recommender] weekday / None -> For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:58:00 | INFO | task5_recommender | [weekday / any weather]
+2026-09-24 21:58:00 | INFO | task5_recommender | For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:58:14 | DEBUG | task5_recommender | [Recommend] weekday/None -> hour 20 (vol 2830, risk 0.013, elevated=False)
+2026-09-24 21:58:14 | INFO | task5_recommender | [Recommender] weekday / None -> For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | [weekday / any weather]
+2026-09-24 21:58:14 | INFO | task5_recommender | For a weekday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2830 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | 
+2026-09-24 21:58:14 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:58:14 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | [weekday / Clear]
+2026-09-24 21:58:14 | INFO | task5_recommender | For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | 
+2026-09-24 21:58:14 | DEBUG | task5_recommender | [Recommend] weekday/Rain -> hour 20 (vol 2862, risk 0.033, elevated=False)
+2026-09-24 21:58:14 | INFO | task5_recommender | [Recommender] weekday / Rain -> For a weekday journey in rain conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2862 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | [weekday / Rain]
+2026-09-24 21:58:14 | INFO | task5_recommender | For a weekday journey in rain conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2862 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | 
+2026-09-24 21:58:14 | DEBUG | task5_recommender | [Recommend] weekend/Clear -> hour 6 (vol 1179, risk 0.000, elevated=False)
+2026-09-24 21:58:14 | INFO | task5_recommender | [Recommender] weekend / Clear -> For a weekend journey in clear conditions, consider travelling between 6:00 AM and 7:00 AM, when traffic volumes are typically lower (model estimate: ~1179 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | [weekend / Clear]
+2026-09-24 21:58:14 | INFO | task5_recommender | For a weekend journey in clear conditions, consider travelling between 6:00 AM and 7:00 AM, when traffic volumes are typically lower (model estimate: ~1179 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | 
+2026-09-24 21:58:14 | DEBUG | task5_recommender | [Recommend] weekday/Snow -> hour 20 (vol 2614, risk 0.056, elevated=False)
+2026-09-24 21:58:14 | INFO | task5_recommender | [Recommender] weekday / Snow -> For a weekday journey in snow conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2614 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | [weekday / Snow]
+2026-09-24 21:58:14 | INFO | task5_recommender | For a weekday journey in snow conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2614 vehicles/hour).
+2026-09-24 21:58:14 | INFO | task5_recommender | 
+2026-09-24 21:58:16 | DEBUG | task5_recommender | [Recommend] holiday/None -> hour 20 (vol 2841, risk 0.010, elevated=False)
+2026-09-24 21:58:16 | INFO | task5_recommender | [Recommender] holiday / None -> For a holiday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2841 vehicles/hour).
+2026-09-24 21:58:16 | INFO | task5_recommender | [holiday / any weather]
+2026-09-24 21:58:16 | INFO | task5_recommender | For a holiday journey, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2841 vehicles/hour).
+2026-09-24 21:58:16 | INFO | task5_recommender | 
+2026-09-24 21:58:16 | DEBUG | task5_recommender | [Recommend] weekday/Thunderstorm -> hour 20 (vol 2822, risk 0.029, elevated=True)
+2026-09-24 21:58:16 | INFO | task5_recommender | [Recommender] weekday / Thunderstorm -> For a weekday journey in thunderstorm conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2822 vehicles/hour). Note: every hour in thunderstorm conditions shows an elevated modelled accident-risk signal relative to the dataset average — this reflects the conditions themselves, and no timing choice fully avoids it.
+2026-09-24 21:58:16 | INFO | task5_recommender | [weekday / Thunderstorm]
+2026-09-24 21:58:16 | INFO | task5_recommender | For a weekday journey in thunderstorm conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2822 vehicles/hour). Note: every hour in thunderstorm conditions shows an elevated modelled accident-risk signal relative to the dataset average — this reflects the conditions themselves, and no timing choice fully avoids it.
+2026-09-24 21:58:16 | INFO | task5_recommender | 
+2026-09-24 21:58:28 | DEBUG | task5_recommender | [Recommend] weekday/Clear -> hour 20 (vol 2846, risk 0.000, elevated=False)
+2026-09-24 21:58:28 | INFO | task5_recommender | [Recommender] weekday / Clear -> For a weekday journey in clear conditions, consider travelling between 8:00 PM and 9:00 PM, when traffic volumes are typically lower (model estimate: ~2846 vehicles/hour).
+2026-09-24 22:15:21 | INFO | task6_mlops | Logging initialised
+2026-09-24 22:15:22 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 22:15:22 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-24 22:15:22 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-24 22:15:22 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-24 22:15:22 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-24 22:15:33 | INFO | task6_mlops | Logging initialised
+2026-09-24 22:15:34 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 22:15:34 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-24 22:15:34 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-24 22:15:34 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-24 22:15:34 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-24 22:15:39 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-24 22:15:48 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-24 22:15:48 | INFO | task6_mlops | Selected production version v2: lowest holdout MAE (292.03)
+2026-09-24 22:15:48 | INFO | task6_mlops | Wrote model_registry.json (3 versions documented)
+2026-09-24 22:17:45 | INFO | task6_mlops | MLflow experiment set: metro_traffic_mlops_versions (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-24 22:18:26 | INFO | task6_mlops | Logging initialised
+2026-09-24 22:18:27 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-24 22:18:27 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-24 22:18:27 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-24 22:18:27 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-24 22:18:27 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-24 22:18:32 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-24 22:18:41 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-24 22:18:41 | INFO | task6_mlops | Selected production version v2: lowest holdout MAE (292.03)
+2026-09-24 22:18:41 | INFO | task6_mlops | Wrote model_registry.json (3 versions documented)
+2026-09-24 22:18:45 | INFO | task6_mlops | MLflow experiment set: metro_traffic_mlops_versions (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-24 22:19:16 | INFO | task6_mlops | [MLflow] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117, registry version 1
+2026-09-24 22:19:33 | INFO | task6_mlops | [MLflow] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283, registry version 2
+2026-09-24 22:20:06 | INFO | task6_mlops | [MLflow] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235, registry version 3
+2026-09-24 22:20:06 | INFO | task6_mlops | Marked registry version 2 as stage=Production
+2026-09-24 22:20:12 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
+2026-09-24 22:20:12 | INFO | task6_mlops | Wrote model_metadata.json
+2026-09-24 22:20:13 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
