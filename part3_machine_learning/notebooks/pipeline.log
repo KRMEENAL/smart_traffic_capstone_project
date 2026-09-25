@@ -644,3 +644,21 @@ cluster
 2026-09-25 20:02:59 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
 2026-09-25 20:02:59 | INFO | task6_mlops | Wrote model_metadata.json
 2026-09-25 20:02:59 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
+2026-09-25 20:31:20 | INFO | task6_mlops | Logging initialised
+2026-09-25 20:31:21 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-25 20:31:21 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-25 20:31:21 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-25 20:31:21 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-25 20:31:21 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-25 20:31:52 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-25 20:32:23 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-25 20:32:23 | INFO | task6_mlops | Selected production version v2: lowest holdout MAE (292.03)
+2026-09-25 20:32:23 | INFO | task6_mlops | Wrote model_registry.json (3 versions documented)
+2026-09-25 20:32:32 | INFO | task6_mlops | MLflow experiment set: metro_traffic_mlops_versions (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-25 20:33:28 | INFO | task6_mlops | [MLflow] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117, registry version 1
+2026-09-25 20:33:57 | INFO | task6_mlops | [MLflow] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283, registry version 2
+2026-09-25 20:34:39 | INFO | task6_mlops | [MLflow] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235, registry version 3
+2026-09-25 20:34:39 | INFO | task6_mlops | Marked registry version 2 as stage=Production
+2026-09-25 20:35:24 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
+2026-09-25 20:35:24 | INFO | task6_mlops | Wrote model_metadata.json
+2026-09-25 20:35:24 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
