@@ -456,3 +456,191 @@ cluster
 2026-09-24 22:20:12 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
 2026-09-24 22:20:12 | INFO | task6_mlops | Wrote model_metadata.json
 2026-09-24 22:20:13 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
+2026-09-24 22:35:36 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
+2026-09-24 22:35:36 | INFO | task6_mlops | Wrote model_metadata.json
+2026-09-25 19:43:21 | INFO | task6_mlops | Logging initialised
+2026-09-25 19:43:32 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-25 19:43:32 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-25 19:43:33 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-25 19:44:02 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-25 19:44:03 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-25 19:44:35 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-25 19:45:47 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-25 19:46:02 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
+2026-09-25 19:53:27 | INFO | task6_mlops | {
+  "predicted_traffic_volume": 5759.7,
+  "model_version": "v2",
+  "model_description": "Random Forest (Task 1 configuration)",
+  "predicted_at": "2026-09-25T11:53:27.094872+00:00"
+}
+2026-09-25 19:53:59 | INFO | task6_mlops | POST /predict -> 200
+2026-09-25 19:53:59 | INFO | task6_mlops | {
+  "predicted_traffic_volume": 5759.7,
+  "model_version": "v2",
+  "model_description": "Random Forest (Task 1 configuration)",
+  "predicted_at": "2026-09-25T11:53:59.689028+00:00"
+}
+2026-09-25 19:55:03 | INFO | task6_mlops | --- A - in-distribution sanity check ---
+2026-09-25 19:55:03 | INFO | task6_mlops | {
+  "overall_status": "PASS",
+  "checks": {
+    "feature_drift_temp_c": {
+      "status": "PASS",
+      "ks_statistic": 0.0507,
+      "p_value": 0.70396,
+      "detail": "temp_c distribution consistent with reference (KS p=0.7040)"
+    },
+    "feature_drift_clouds_all": {
+      "status": "PASS",
+      "ks_statistic": 0.0193,
+      "p_value": 1.0,
+      "detail": "clouds_all distribution consistent with reference (KS p=1.0000)"
+    },
+    "feature_drift_total_precipitation": {
+      "status": "PASS",
+      "ks_statistic": 0.0,
+      "p_value": 1.0,
+      "detail": "total_precipitation distribution consistent with reference (KS p=1.0000)"
+    },
+    "prediction_error_drift": {
+      "status": "PASS",
+      "current_mae": 199.56,
+      "reference_mae": 292.03,
+      "ratio": 0.683,
+      "detail": "current MAE 199.6 vs reference 292.0 (x0.68)"
+    }
+  },
+  "n_records": 300,
+  "checked_at": "2026-09-25T11:55:03.792974+00:00"
+}
+2026-09-25 19:55:16 | INFO | task6_mlops | 
+--- A - in-distribution sanity check ---
+2026-09-25 19:55:16 | INFO | task6_mlops | {
+  "overall_status": "PASS",
+  "checks": {
+    "feature_drift_temp_c": {
+      "status": "PASS",
+      "ks_statistic": 0.0507,
+      "p_value": 0.70396,
+      "detail": "temp_c distribution consistent with reference (KS p=0.7040)"
+    },
+    "feature_drift_clouds_all": {
+      "status": "PASS",
+      "ks_statistic": 0.0193,
+      "p_value": 1.0,
+      "detail": "clouds_all distribution consistent with reference (KS p=1.0000)"
+    },
+    "feature_drift_total_precipitation": {
+      "status": "PASS",
+      "ks_statistic": 0.0,
+      "p_value": 1.0,
+      "detail": "total_precipitation distribution consistent with reference (KS p=1.0000)"
+    },
+    "prediction_error_drift": {
+      "status": "PASS",
+      "current_mae": 199.56,
+      "reference_mae": 292.03,
+      "ratio": 0.683,
+      "detail": "current MAE 199.6 vs reference 292.0 (x0.68)"
+    }
+  },
+  "n_records": 300,
+  "checked_at": "2026-09-25T11:55:16.562357+00:00"
+}
+2026-09-25 19:55:16 | INFO | task6_mlops | 
+--- B - real data, one year later ---
+2026-09-25 19:55:16 | INFO | task6_mlops | {
+  "overall_status": "ALERT",
+  "checks": {
+    "feature_drift_temp_c": {
+      "status": "ALERT",
+      "ks_statistic": 0.1447,
+      "p_value": 0.0007,
+      "detail": "temp_c distribution differs from reference (KS p=0.0007)"
+    },
+    "feature_drift_clouds_all": {
+      "status": "PASS",
+      "ks_statistic": 0.052,
+      "p_value": 0.6733,
+      "detail": "clouds_all distribution consistent with reference (KS p=0.6733)"
+    },
+    "feature_drift_total_precipitation": {
+      "status": "PASS",
+      "ks_statistic": 0.0433,
+      "p_value": 0.8591,
+      "detail": "total_precipitation distribution consistent with reference (KS p=0.8591)"
+    },
+    "prediction_error_drift": {
+      "status": "PASS",
+      "current_mae": 220.83,
+      "reference_mae": 292.03,
+      "ratio": 0.756,
+      "detail": "current MAE 220.8 vs reference 292.0 (x0.76)"
+    }
+  },
+  "n_records": 300,
+  "checked_at": "2026-09-25T11:55:16.853656+00:00"
+}
+2026-09-25 19:55:17 | INFO | task6_mlops | 
+--- C - synthetic stress test ---
+2026-09-25 19:55:17 | INFO | task6_mlops | {
+  "overall_status": "ALERT",
+  "checks": {
+    "feature_drift_temp_c": {
+      "status": "ALERT",
+      "ks_statistic": 0.3727,
+      "p_value": 0.0,
+      "detail": "temp_c distribution differs from reference (KS p=0.0000)"
+    },
+    "feature_drift_clouds_all": {
+      "status": "ALERT",
+      "ks_statistic": 0.4747,
+      "p_value": 0.0,
+      "detail": "clouds_all distribution differs from reference (KS p=0.0000)"
+    },
+    "feature_drift_total_precipitation": {
+      "status": "PASS",
+      "ks_statistic": 0.0433,
+      "p_value": 0.8591,
+      "detail": "total_precipitation distribution consistent with reference (KS p=0.8591)"
+    },
+    "prediction_error_drift": {
+      "status": "ALERT",
+      "current_mae": 3320.17,
+      "reference_mae": 292.03,
+      "ratio": 11.369,
+      "detail": "current MAE 3320.2 vs reference 292.0 (x11.37)"
+    }
+  },
+  "n_records": 300,
+  "checked_at": "2026-09-25T11:55:17.094707+00:00"
+}
+2026-09-25 19:56:37 | INFO | task6_mlops | Logging initialised
+2026-09-25 19:56:37 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-25 19:56:37 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-25 19:56:37 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-25 19:56:37 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-25 19:56:37 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-25 19:57:09 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-25 19:58:16 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-25 19:58:16 | INFO | task6_mlops | Selected production version v2: lowest holdout MAE (292.03)
+2026-09-25 19:58:16 | INFO | task6_mlops | Wrote model_registry.json (3 versions documented)
+2026-09-25 19:58:22 | INFO | task6_mlops | MLflow experiment set: metro_traffic_mlops_versions (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-25 19:58:56 | INFO | task6_mlops | Logging initialised
+2026-09-25 19:58:57 | INFO | task6_mlops | Loaded 48187 rows, 38 columns from Features_Metro_Interstate_Traffic_Volume.csv
+2026-09-25 19:58:57 | INFO | task6_mlops | Modelling on 48187 rows, 24 features
+2026-09-25 19:58:58 | INFO | task6_mlops | Weather categories detected: ['Clear', 'Clouds', 'Drizzle', 'Fog', 'Haze', 'Mist', 'Rain', 'Smoke', 'Snow', 'Squall', 'Thunderstorm']
+2026-09-25 19:58:58 | INFO | task6_mlops | Chronological split: train 38549 rows (2012-10-02 09:00:00 to 2017-11-01 19:00:00), holdout 9638 rows (2017-11-01 20:00:00 to 2018-09-30 23:00:00)
+2026-09-25 19:58:58 | INFO | task6_mlops | [Versioning] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117
+2026-09-25 19:59:24 | INFO | task6_mlops | [Versioning] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283
+2026-09-25 20:00:20 | INFO | task6_mlops | [Versioning] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235
+2026-09-25 20:00:20 | INFO | task6_mlops | Selected production version v2: lowest holdout MAE (292.03)
+2026-09-25 20:00:20 | INFO | task6_mlops | Wrote model_registry.json (3 versions documented)
+2026-09-25 20:00:24 | INFO | task6_mlops | MLflow experiment set: metro_traffic_mlops_versions (tracking URI: file:///C:/Projects/Learning/NUS_AI_ML_Data_Science_Programme/33rd_week_capstone_project/smart_traffic_capstone_project/smart_traffic_capstone_project/part3_machine_learning/notebooks/mlruns)
+2026-09-25 20:01:13 | INFO | task6_mlops | [MLflow] v1 (Linear Regression baseline) -> MAE 829.41, R2 0.7117, registry version 1
+2026-09-25 20:01:37 | INFO | task6_mlops | [MLflow] v2 (Random Forest (Task 1 configuration)) -> MAE 292.03, R2 0.9283, registry version 2
+2026-09-25 20:02:20 | INFO | task6_mlops | [MLflow] v3 (Random Forest (deeper candidate)) -> MAE 308.77, R2 0.9235, registry version 3
+2026-09-25 20:02:20 | INFO | task6_mlops | Marked registry version 2 as stage=Production
+2026-09-25 20:02:59 | INFO | task6_mlops | Saved production_model.joblib (version v2, refit on all 48187 rows)
+2026-09-25 20:02:59 | INFO | task6_mlops | Wrote model_metadata.json
+2026-09-25 20:02:59 | INFO | task6_mlops | Wrote reference_stats.json (reference window: 2016-11-01 19:00:00 to 2017-11-01 19:00:00)
